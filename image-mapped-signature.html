@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Mapped Email Signature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .signature-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .signature-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .instructions {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #007bff;
+        }
+        .coordinates-info {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .map-areas {
+            margin-top: 20px;
+        }
+        .area-item {
+            background: #f8f9fa;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        .area-item strong {
+            color: #495057;
+        }
+        .area-item a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .area-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Mapped Email Signature</h1>
+        
+        <div class="instructions">
+            <h3>How to Use Image Mapping:</h3>
+            <p>This signature image has clickable areas defined using HTML image mapping. You can click on different parts of the signature to navigate to different links.</p>
+            <p><strong>Current clickable areas:</strong></p>
+            <ul>
+                <li>Company logo area</li>
+                <li>Name/contact area</li>
+                <li>Social media icons</li>
+                <li>Contact information</li>
+            </ul>
+        </div>
+
+        <div class="signature-container">
+            <img src="esig.jpeg" 
+                 alt="The Lex Group Email Signature" 
+                 class="signature-image"
+                 usemap="#signature-map">
+            
+            <map name="signature-map">
+                <!-- Company Logo Area -->
+                <area shape="rect" 
+                      coords="20,20,200,80" 
+                      href="https://thelexgroup.com" 
+                      alt="The Lex Group Website"
+                      target="_blank">
+                
+                <!-- Name/Contact Area -->
+                <area shape="rect" 
+                      coords="220,20,400,60" 
+                      href="mailto:alexis@thelexgroup.com" 
+                      alt="Email Alexis Bress">
+                
+                <!-- Phone Number Area -->
+                <area shape="rect" 
+                      coords="220,70,350,90" 
+                      href="tel:+1234567890" 
+                      alt="Call Phone Number">
+                
+                <!-- Website Area -->
+                <area shape="rect" 
+                      coords="220,100,350,120" 
+                      href="https://thelexgroup.com" 
+                      alt="Visit Website"
+                      target="_blank">
+                
+                <!-- Social Media Icons (adjust coordinates as needed) -->
+                <area shape="circle" 
+                      coords="50,150,15" 
+                      href="https://facebook.com/thelexgroup" 
+                      alt="Facebook"
+                      target="_blank">
+                
+                <area shape="circle" 
+                      coords="80,150,15" 
+                      href="https://instagram.com/thelexgroup" 
+                      alt="Instagram"
+                      target="_blank">
+                
+                <area shape="circle" 
+                      coords="110,150,15" 
+                      href="https://twitter.com/thelexgroup" 
+                      alt="Twitter/X"
+                      target="_blank">
+                
+                <area shape="circle" 
+                      coords="140,150,15" 
+                      href="https://youtube.com/thelexgroup" 
+                      alt="YouTube"
+                      target="_blank">
+            </map>
+        </div>
+
+        <div class="map-areas">
+            <h3>Current Clickable Areas:</h3>
+            
+            <div class="area-item">
+                <strong>Company Logo:</strong> 
+                <a href="https://thelexgroup.com" target="_blank">https://thelexgroup.com</a>
+                <div class="coordinates-info">Coordinates: rect(20,20,200,80)</div>
+            </div>
+            
+            <div class="area-item">
+                <strong>Email Contact:</strong> 
+                <a href="mailto:alexis@thelexgroup.com">alexis@thelexgroup.com</a>
+                <div class="coordinates-info">Coordinates: rect(220,20,400,60)</div>
+            </div>
+            
+            <div class="area-item">
+                <strong>Phone Number:</strong> 
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                <div class="coordinates-info">Coordinates: rect(220,70,350,90)</div>
+            </div>
+            
+            <div class="area-item">
+                <strong>Website:</strong> 
+                <a href="https://thelexgroup.com" target="_blank">https://thelexgroup.com</a>
+                <div class="coordinates-info">Coordinates: rect(220,100,350,120)</div>
+            </div>
+            
+            <div class="area-item">
+                <strong>Social Media:</strong>
+                <ul>
+                    <li><a href="https://facebook.com/thelexgroup" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com/thelexgroup" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/thelexgroup" target="_blank">Twitter/X</a></li>
+                    <li><a href="https://youtube.com/thelexgroup" target="_blank">YouTube</a></li>
+                </ul>
+                <div class="coordinates-info">Coordinates: circles at (50,150), (80,150), (110,150), (140,150)</div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Customization Instructions:</h3>
+            <p><strong>To adjust the clickable areas:</strong></p>
+            <ol>
+                <li>Open this HTML file in a browser</li>
+                <li>Right-click on the image and select "Inspect Element"</li>
+                <li>Find the &lt;map&gt; element and adjust the coordinates</li>
+                <li>Update the href attributes with your actual URLs</li>
+                <li>Test by clicking on different areas of the image</li>
+            </ol>
+            
+            <p><strong>Coordinate System:</strong></p>
+            <ul>
+                <li><code>rect(x1,y1,x2,y2)</code> - Rectangle from top-left (x1,y1) to bottom-right (x2,y2)</li>
+                <li><code>circle(x,y,radius)</code> - Circle centered at (x,y) with given radius</li>
+                <li><code>poly(x1,y1,x2,y2,x3,y3,...)</code> - Polygon with multiple points</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add hover effects to show clickable areas
+        document.addEventListener('DOMContentLoaded', function() {
+            const areas = document.querySelectorAll('area');
+            const image = document.querySelector('.signature-image');
+            
+            areas.forEach(area => {
+                area.addEventListener('mouseenter', function() {
+                    // You can add visual feedback here
+                    console.log('Hovering over:', this.alt);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
