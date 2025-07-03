@@ -1,45 +1,48 @@
-# Email Signature Project
+# Email Signature
 
-A professional email signature for Alexis Bress at The Lex Group.
+This project contains a single, modern, Gmail-optimized HTML email signature for The Lex Group.
 
-## Files
+## Files Included
 
-- `email-signature.html` - Main email signature with full styling and fonts
-- `email-signature-gmail.html` - Gmail-optimized version with inline styles
-- `DSC06620.jpg` - Profile photo
-- `eXp-Luxury-2Color-Black-Horizontal.png` - Company logo
-- `icons8-*.svg` - Social media icons (Facebook, Instagram, X/Twitter, YouTube)
+- `email-signature-gmail-embedded.html` — The main HTML signature file, ready for use in Gmail. All icons are embedded as base64, and logos are hosted on Google Drive for maximum compatibility.
+- `The Lex Group-min.png` — The optimized logo image used in the signature (hosted on Google Drive, not needed for signature installation).
+- `README.md` — This documentation file.
 
-## How to Use
+---
 
-### View the Signature
-1. Open `email-signature.html` in any web browser to preview
-2. Use `email-signature-gmail.html` for Gmail compatibility
+## How to Add the Signature to Gmail
 
-### Add to Email Clients
+1. **Open the HTML file**
+   - Double-click `email-signature-gmail-embedded.html` to open it in your web browser.
 
-#### Gmail
-1. Open Gmail
-2. Go to Settings → General
-3. Scroll to "Signature"
-4. Copy content from `email-signature-gmail.html`
-5. Paste into signature field
-6. Save changes
+2. **Copy the Signature**
+   - Select the entire signature with your mouse (click and drag from the top left to the bottom right).
+   - Right-click and choose **Copy** (or press `Cmd+C` on Mac / `Ctrl+C` on Windows).
 
-#### Other Email Clients
-- Copy content from `email-signature.html`
-- Paste into your email client's signature settings
+3. **Open Gmail Settings**
+   - Go to [Gmail](https://mail.google.com) and log in.
+   - Click the gear icon (⚙️) in the top right and select **See all settings**.
 
-## Features
-- Professional design with company branding
-- Clickable social media links
-- Responsive layout
-- Gmail-compatible version
-- Profile photo and company logo
-- Contact information with clickable links
+4. **Find the Signature Section**
+   - In the **General** tab, scroll down to the **Signature** section.
+   - Click **Create new** (if you don't have a signature yet) and give it a name.
 
-## Customization
-- Update profile photo by replacing `DSC06620.jpg`
-- Modify company logo by replacing `eXp-Luxury-2Color-Black-Horizontal.png`
-- Edit contact information in the HTML files
-- Adjust colors and styling as needed 
+5. **Paste the Signature**
+   - In the signature editor box, click inside the box and paste your signature (`Cmd+V` on Mac / `Ctrl+V` on Windows).
+   - The formatting and images should appear as in the HTML file.
+
+6. **Save Changes**
+   - Scroll to the bottom of the settings page and click **Save Changes**.
+
+7. **Test Your Signature**
+   - Compose a new email to verify your signature appears correctly.
+
+---
+
+**Tip:**
+- If images do not appear, make sure your email client is set to display external images.
+- The signature is optimized for Gmail, but should work in most modern email clients.
+
+---
+
+For any issues or questions, please contact The Lex Group support. 
